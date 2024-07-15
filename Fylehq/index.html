@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylehq</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link Swiper JS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- link Font Awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navigation">
+        <!-- logo -->
+        <a href="#" class="logo">
+          <img src="image/FyleHQ-logo.png" alt="">
+        </a>
+        <!-- menu -->
+        <ul class="menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section>
+      <div class="container">
+        <div class="text-container">
+          <h2 class="award">AWARD WINNING</h2>
+          <h1 class="title">DIGITAL MARKETING AGENCY</h1>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident sit aperiam atque delectus, cupiditate molestias modi repellendus velit dicta.</p>
+          <button class="contact-btn" onclick="openPopup()">CONTACT US</button>
+        </div>       
+        <div class="image-container">
+          <img src="image/hero.jpg" alt="Person working" class="image">
+        </div>
+      </div>
+
+      <!-- Contact Pop Up Section -->
+       
+      <div class="contact-form">
+        <h2>Talk to us</h2>
+        <span class="close-button" onclick="closePopup()"><i class="fa-solid fa-xmark" style="color: #0c0d0d;"></i></span>
+                                       
+        <form id="contactForm" action="https://getform.io/f/avreyrja" method="POST">
+          <div class="inputBox">
+            <input type="email" id="email" name="email" required>
+            <span>Work email*</span>
+          </div>
+          <div class="name">
+            <div class="inputBox">
+              <input type="text" id="firstName" name="firstName" required>
+              <span>First name*</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" id="lastName" name="lastName" required>
+              <span>Last name*</span>
+            </div>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <span class="check">I agree to Fyle's terms and conditions, and provide consent to send me communication.</span>
+          </div>          
+          <button type="submit" >Contact Us</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <div class="services-section">
+            <div class="services-text">
+                <div class="services-text-header">
+                    <h2 class="subtitle">WHAT WE DO</h2>
+                    <h1 class="main-title">SERVICES PROVIDE FOR YOU</h1>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus corrupti voluptas libero fugiat culpa officiis sapiente quaerat. Accusantium eos quibusdam.</p>
+                </div> 
+            </div> 
+            <div class="services-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="image/1.png" alt="">
+                        <div class="card-body">
+                          <div class="icon">
+                            <i class="fa-solid fa-window-maximize" style="color: #f5f5f4;"></i>
+                          </div>
+                            <h1 class="card-tittle">Digital Marketing</h1>
+                            <p class="card-sub-tittle">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="card-button">
+                              <a href="https://www.fylehq.com/" target="_blank">Read more</a>
+                              <i class="fa-solid fa-arrow-right" style="color: #fb0909;"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/2.png" alt="">
+                        <div class="card-body">
+                          <div class="icon">
+                            <i class="fa-solid fa-window-maximize" style="color: #f5f5f4;"></i>
+                          </div>
+                            <h1 class="card-tittle">Pharmacy</h1>
+                            <p class="card-sub-tittle">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="card-button">
+                              <a href="https://www.fylehq.com/" target="_blank">Read more</a>
+                              <i class="fa-solid fa-arrow-right" style="color: #fb0909;"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/3.jpg" alt="">
+                        <div class="card-body">
+                          <div class="icon">
+                            <i class="fa-solid fa-window-maximize" style="color: #f5f5f4;"></i>
+                          </div>
+                            <h1 class="card-tittle">Office Assistant</h1>
+                            <p class="card-sub-tittle">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="card-button">
+                              <a href="https://www.fylehq.com/" target="_blank">Read more</a>
+                              <i class="fa-solid fa-arrow-right" style="color: #fb0909;"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/4.jpg" alt="">
+                        <div class="card-body">
+                          <div class="icon">
+                            <i class="fa-solid fa-window-maximize" style="color: #f5f5f4;"></i>
+                          </div>
+                            <h1 class="card-tittle">Web Development</h1>
+                            <p class="card-sub-tittle">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="card-button">
+                              <a href="https://www.fylehq.com/" target="_blank">Read more</a>
+                              <i class="fa-solid fa-arrow-right" style="color: #fb0909;"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/5.jpg" alt="">
+                        <div class="card-body">
+                          <div class="icon">
+                            <i class="fa-solid fa-window-maximize" style="color: #f5f5f4;"></i>
+                          </div>
+                            <h1 class="card-tittle">Apps Development</h1>
+                            <p class="card-sub-tittle">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="card-button">
+                              <a href="https://www.fylehq.com/" target="_blank">Read more</a>
+                              <i class="fa-solid fa-arrow-right" style="color: #fb0909;"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/6.jpg" alt="">
+                        <div class="card-body">
+                          <div class="icon">
+                            <i class="fa-solid fa-window-maximize" style="color: #f5f5f4;"></i>
+                          </div>
+                            <h1 class="card-tittle">Real State</h1>
+                            <p class="card-sub-tittle">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="card-button">
+                              <a href="https://www.fylehq.com/" target="_blank">Read more</a>
+                              <i class="fa-solid fa-arrow-right" style="color: #fb0909;"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/7.jpg" alt="">
+                        <div class="card-body">
+                          <div class="icon">
+                            <i class="fa-solid fa-window-maximize" style="color: #f5f5f4;"></i>
+                          </div>
+                            <h1 class="card-tittle">Grocery Stote</h1>
+                            <p class="card-sub-tittle">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="card-button">
+                              <a href="https://www.fylehq.com/" target="_blank">Read more</a>
+                              <i class="fa-solid fa-arrow-right" style="color: #fb0909;"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/8.jpg" alt="">
+                        <div class="card-body">
+                          <div class="icon">
+                            <i class="fa-solid fa-window-maximize" style="color: #f5f5f4;"></i>
+                          </div>
+                            <h1 class="card-tittle">Travel Agency</h1>
+                            <p class="card-sub-tittle">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="card-button">
+                              <a href="https://www.fylehq.com/" target="_blank">Read more</a>
+                              <i class="fa-solid fa-arrow-right" style="color: #fb0909;"></i>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>     
+            </div>         
+        </div>
+    </section>
+    <!-- Our Project Section -->
+    <section>
+      <div class="best-section">
+        <div class="best-header">
+            <h2 class="subtitle">OUR PROJECT</h2>
+            <h1 class="main-title">WHY WE ARE BEST</h1>
+        </div>
+        <div class="best-content">
+          <div class="image-container">
+            <div class="item one" style="display: none;">
+              <img src="image/9.webp" alt="Project image" class="image">
+            </div>
+            <div class="item two" >
+              <img src="image/20.png" alt="Project image" class="image">
+            </div>
+            <div class="item three" style="display: none;">
+              <img src="image/7.jpg" alt="Project image" class="image">
+            </div>
+          </div>
+            <div class="text-container">
+                <div class="text-item" data-li="one">
+                    <h3 class="text-title">Genderless Kei - Japan's Hot</h3>
+                    <p class="text-description">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="text-item active" data-li="two">
+                    <h3 class="text-title">Better Strategy & Quality</h3>
+                    <p class="text-description">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="text-item" data-li="three">
+                    <h3 class="text-title">Genderless Kei - Japan's Hot</h3>
+                    <p class="text-description">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Expert & Growth Section -->
+
+    <section>
+      <div class="expert-container">
+        <h3>EXPERTS GROWTH</h3>
+        <h1>OUR COMPANY GROWTH</h1>
+        <div class="growth-stats">
+            <div class="stat">
+                <div class="icon"><i class="fa-solid fa-heart" style="color: #fa052a;"></i></div>
+                <div class="number" id="customers">199+</div>
+                <div class="label">Satisfied Customers</div>
+            </div>
+            <div class="stat">
+                <div class="icon"><i class="fa-solid fa-clock" style="color: #f10909;"></i></div>
+                <div class="number" id="days">1591+</div>
+                <div class="label">Days Of Operation</div>
+            </div>
+            <div class="stat">
+                <div class="icon"><i class="fa-solid fa-circle-check" style="color: #f50a2d;"></i></div>
+                <div class="number" id="projects">283+</div>
+                <div class="label">Complete Projects</div>
+            </div>
+            <div class="stat">
+                <div class="icon"><i class="fa-solid fa-trophy" style="color: #f20d0d;"></i></div>
+                <div class="number" id="awards">75+</div>
+                <div class="label">Win Awards</div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <!-- link Swiper JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- link Javascript  -->
+    <script src="script.js"></script>
+</body>
+</html>
